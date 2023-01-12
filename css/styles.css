@@ -366,3 +366,14 @@ button {
   color: var(--secondary-txt-color);
   padding: 0 24px 20px 24px;
 }
+
+/* icons */
+.icon-advantages-bg {
+  width: 270px;
+  height: 120px;
+  background-color: var(--third-bg-color);
+  border-style: none;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}

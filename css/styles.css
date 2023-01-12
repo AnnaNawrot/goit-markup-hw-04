@@ -54,7 +54,7 @@ img {
   justify-content: space-between;
   width: 254px;
   margin-left: 93px;
-  margin-right: 364px;
+  margin-right: 350px;
 }
 
 .nav-link {
@@ -73,6 +73,19 @@ img {
 
 .header-contacts {
   display: flex;
+  align-items: baseline;
+}
+
+/* .contact-item {
+  display: flex;
+  padding-right: 30px;
+} */
+
+.contact-item {
+  display: flex;
+}
+.contact-item:not(:last-child) {
+  padding-right: 30px;
 }
 
 .contact-link {
@@ -82,8 +95,9 @@ img {
   font-size: 14px;
   line-height: 1, 1;
   letter-spacing: 0.02em;
-  padding-left: 50px;
+  /* padding-left: 50px; */
   /* padding-right: 0; */
+  padding-left: 8px;
 }
 
 .contact-link:hover,

@@ -10,6 +10,7 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
+  --icons-bg-color: #afb1b8;
   --primary-txt-color: #212121;
   --secondary-txt-color: #757575;
   --third-txt-color: #ffffff;
@@ -220,6 +221,8 @@ img {
 
 .card-description {
   padding: 30px 0;
+  width: 270px;
+  height: 168px;
   background: var(--third-txt-color);
   border-radius: 0px 0px 4px 4px;
 }
@@ -239,12 +242,55 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .figcaption {
   background-color: var(--primary-bg-color);
 }
 
+/* ul */
+.social-icons {
+  width: 206px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* li */
+.soc-list-item {
+  display: flex;
+}
+/* svg */
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  fill: var(--icons-bg-color);
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+/* a */
+.soc-link {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+/* a:hover */
+.soc-link:hover {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  fill: var(--primary-bg-color);
+  padding: 12px;
+}
 /* LOGO */
 .logo-container {
   margin: 0px;

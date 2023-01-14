@@ -137,7 +137,6 @@ img {
   font-size: 44px;
   line-height: 1, 36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
   color: var(--third-txt-color);
   padding-top: 200px;
@@ -161,6 +160,8 @@ img {
 /* ADVANTAGES */
 .advantages-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
 }
 .advantages-item {
   width: 270px;

@@ -101,19 +101,21 @@ img {
 }
 
 /* działa tylko na linki */
-.contact-link:hover,
+/* .contact-link:hover,
 .contact-link:focus {
   color: var(--brand-color);
-}
+} */
 
 /* nie działa na ikony (jeszcze :P) */
 .icon-contact {
   margin-right: 10px;
   margin-left: 0px;
+  fill: var(--secondary-txt-color);
 }
+
 .icon-contact:hover,
-.icon-contact:focus .icon-contact:active {
-  color: var(--brand-color);
+.icon-contact:focus {
+  fill: var(--brand-color);
 }
 
 /* Main Page Studio */
@@ -249,7 +251,8 @@ img {
   background-color: var(--primary-bg-color);
 }
 
-ul .social-icons {
+/* ul  */
+.social-icons {
   width: 206px;
   display: flex;
   justify-content: center;

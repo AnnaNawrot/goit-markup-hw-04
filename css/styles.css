@@ -351,6 +351,40 @@ img {
   padding-bottom: 60px;
 }
 
+.cta-join-us {
+  display: flex;
+}
+
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 260px;
+}
+
+.social-list-item-footer {
+  display: flex;
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--secondary-txt-color);
+  fill: var(--primary-bg-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus,
+.social-link-footer:active {
+  background-color: var(--brand-color);
+  fill: var(--primary-bg-color);
+}
+
 /* PROJECTS */
 
 .filter {

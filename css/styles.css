@@ -335,6 +335,9 @@ img {
   color: var(--brand-color);
 }
 
+.cta-join-us {
+}
+
 .cta {
   font-weight: 700;
   font-size: 14px;
@@ -351,23 +354,19 @@ img {
   padding-bottom: 60px;
 }
 
-.cta-join-us {
-  display: flex;
-}
-
-.social-list-footer {
+.social-list-foot {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 260px;
+  width: 206px;
+  margin-top: 20px;
 }
 
-.social-list-item-footer {
+.social-list-item-foot {
   display: flex;
 }
 
-.social-link-footer {
+.social-link-foot {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,9 +377,9 @@ img {
   fill: var(--primary-bg-color);
 }
 
-.social-link-footer:hover,
-.social-link-footer:focus,
-.social-link-footer:active {
+.social-link-foot:hover,
+.social-link-foot:focus,
+.social-link-foot:active {
   background-color: var(--brand-color);
   fill: var(--primary-bg-color);
 }

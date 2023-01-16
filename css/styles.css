@@ -296,8 +296,8 @@ img {
   margin-top: 16px;
 }
 
-.social-list-item {
-  display: flex;
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -324,7 +324,6 @@ img {
   justify-content: center;
   margin: 0;
   padding: 0;
-  /* margin-top: 16px; */
   width: 1170px;
 }
 

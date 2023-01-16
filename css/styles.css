@@ -280,9 +280,6 @@ img {
 }
 
 /* LOGO */
-.logo-container {
-  margin: 0px;
-}
 
 .logo {
   font-family: "Raleway";
@@ -335,9 +332,6 @@ img {
   color: var(--brand-color);
 }
 
-.cta-join-us {
-}
-
 .cta {
   font-weight: 700;
   font-size: 14px;
@@ -345,21 +339,27 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 72px;
+  margin-left: 0;
+  display: flex;
 }
 
 .footer {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 215px;
 }
 
+.footer-containers {
+  display: flex;
+}
 .social-list-foot {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 206px;
   margin-top: 20px;
+  margin-left: 0;
 }
 
 .social-list-item-foot {

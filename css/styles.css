@@ -44,7 +44,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .header {
@@ -75,12 +74,13 @@ img {
 }
 
 /* CONTACTS header  */
-.header-contacts {
+/* .header-contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: 0;
 }
+
 .header-contacts a {
   color: var(--secondary-txt-color);
 }
@@ -104,16 +104,44 @@ img {
   line-height: 1, 1;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color);
-  /* padding-left: 50px; */
-  /* padding-right: 0; */
-  margin-right: 30px;
-  /* tutaj powinno być not last-child! */
 }
 
 .contact-link:hover,
 .contact-link:focus,
 .contact-link:active {
   color: var(--brand-color);
+} */
+
+.contacts-header {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 1;
+  letter-spacing: 0.02em;
+  color: var(--secondary-txt-color);
+  fill: var(--secondary-txt-color);
+}
+
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
+  color: var(--brand-color);
+  fill: var(--brand-color);
+}
+
+.contact-link-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact-icon {
+  padding-right: 10px;
 }
 
 /* Main Page Studio */
@@ -187,6 +215,17 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
   max-width: 270px;
+}
+
+/* BG for advantages icons */
+.icons-bg {
+  width: 270px;
+  height: 120px;
+  background-color: var(--third-bg-color);
+  border-style: none;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
 }
 
 .section-title {
@@ -280,6 +319,38 @@ img {
 }
 
 /* our customers */
+.customers-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  /* margin-top: 16px; */
+  width: 1170px;
+}
+
+.customers-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-bg-color);
+  border-radius: 4px;
+  background-color: var(--primary-bg-color);
+  fill: var(--icons-bg-color);
+}
+
+.customer-link:hover,
+.customer-link:focus,
+.customer-link:active {
+  background-color: var(--primary-bg-color);
+  fill: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
 
 /* footer */
 
@@ -287,7 +358,6 @@ img {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  /* padding-left: 215px; */
 }
 
 .footer-containers {
@@ -392,7 +462,7 @@ img {
   fill: var(--primary-bg-color);
 }
 
-/* PROJECTS */
+/* Portfolio */
 
 .filter {
   display: flex;
@@ -451,9 +521,13 @@ button {
 
 .project-card {
   width: 370;
+  border: 1px solid #eeeeee;
+}
+
+.project-card:hover,
+.project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  /* flex-basis: calc((100%-2 * 30px) / 3); */
 }
 
 .project-description {
@@ -477,49 +551,4 @@ button {
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
   padding: 0 24px 20px 24px;
-}
-
-/* ICONS */
-/* BG for advantages */
-.icons-bg {
-  width: 270px;
-  height: 120px;
-  background-color: var(--third-bg-color);
-  border-style: none;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-}
-
-.customers-list {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  /* margin-top: 16px; */
-  width: 1170px;
-}
-
-.customers-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.customer-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icons-bg-color);
-  border-radius: 4px;
-  background-color: var(--primary-bg-color);
-  fill: var(--icons-bg-color);
-}
-
-.customer-link:hover,
-.customer-link:focus,
-.customer-link:active {
-  background-color: var(--primary-bg-color);
-  fill: var(--brand-color);
-  border: 1px solid var(--brand-color);
 }

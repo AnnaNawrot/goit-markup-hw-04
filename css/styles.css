@@ -11,6 +11,7 @@
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
   --icons-bg-color: #afb1b8;
+  --icons-secondary-bg-color: rgba(255, 255, 255, 0.1);
   --primary-txt-color: #212121;
   --secondary-txt-color: #757575;
   --third-txt-color: #ffffff;
@@ -199,11 +200,11 @@ img {
 }
 .advantages-item {
   width: 270px;
+}
+
+.advantages-item:not(:last-child) {
   margin-right: 30px;
 }
-/* .advantages-item:last-child {
-  margin-right: 0px;
-} */
 
 .advantages-title {
   font-weight: 700;
@@ -216,10 +217,9 @@ img {
 
 .advantages-description {
   font-size: 14px;
-  line-height: 1, 7;
+  line-height: 171%;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
-  max-width: 270px;
 }
 
 /* BG for advantages icons */
@@ -455,15 +455,16 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  background-color: var(--secondary-txt-color);
-  fill: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--third-txt-color);
 }
 
 .social-link-foot:hover,
 .social-link-foot:focus,
 .social-link-foot:active {
-  background-color: var(--brand-color);
   fill: var(--primary-bg-color);
+  background-color: var(--brand-color);
 }
 
 /* Portfolio */
